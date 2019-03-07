@@ -1,0 +1,9 @@
+<mat-card style="width: 200px;cursor: pointer;text-align: center;" (click)="dp.toggleCalendar()">
+    {{fecha}}
+</mat-card>
+
+<input class="form-control" style="float:none;display: none;" placeholder="Select a date" ngx-mydatepicker
+       name="mydate"
+       [options]="myOptions" #dp="ngx-mydatepicker" (dateChanged)="onDateChanged($event)"/>
+
+<button (click)="test()">Aceptar</button>
